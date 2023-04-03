@@ -1,0 +1,66 @@
+body {
+    padding: 0px; 
+    margin: 0px;
+}
+
+#modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    top: 0;
+    overflow: auto;
+    background: rgba(0,0,0,0.6)
+}
+
+.content-modal {
+    padding: 80px; 
+    width: 600px;
+    max-width: calc(100vw - 80px);
+    max-height: calc(100vh - 80px);
+    border-radius: 5px;
+    color: #fff;
+    background: #50a07c;
+    text-align: center;
+    position: relative;
+}
+
+.content-modal img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.content-modal h1 {
+    font-size: 3rem;
+}
+
+.content-modal .btn {
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 50px auto 0px auto;
+    padding: 20px;
+    color: #50a07c;
+    text-decoration: none;
+}
+
+.content-modal button {
+    background: none;
+    border: none; 
+}
+
+.content-modal button::after {
+    content: "";
+    display: block;
+    background-image: url('https://ritmodiag.com/wp-content/uploads/2023/04/croix-blanche-ritmo-diag.svg');
+    background-size: contain;
+    width: 40px; 
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
